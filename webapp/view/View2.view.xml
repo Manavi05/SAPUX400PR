@@ -1,0 +1,23 @@
+<mvc:View
+    controllerName="demo.practice.practice.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <VBox class="sapUiSmallMargin" width="20rem">
+        <Title text="Button Enable/Disable Based on Input" class="sapUiSmallMarginBottom" />
+
+        <Input 
+            id="inputfield"
+            placeholder="Enter text" 
+            liveChange="onInputChange"/>
+
+        <Button 
+            id="submitButton"
+            text="Submit"
+            type="Emphasized"
+            enabled="false"
+            press="onSubmit"
+            class="sapUiSmallMarginTop" />
+
+    </VBox>
+</mvc:View>
