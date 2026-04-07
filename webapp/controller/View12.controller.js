@@ -6,7 +6,7 @@ sap.ui.define([
 ], function (Controller,JSONModel,MessageToast) {
     "use strict";
 
-    return Controller.extend("demo.practice.practice.controller.View11", {
+    return Controller.extend("demo.practice.practice.controller.View12", {
 
         onInit: function (){
             var oModel = new JSONModel({

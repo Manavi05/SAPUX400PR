@@ -5,7 +5,7 @@
     xmlns:core="sap.ui.core"
     xmlns="sap.m">
 
-    <VBox class="sapUiSmallMargin" width="20rem">
+    <VBox class="sapUiSmallMargin" width="22rem">
 
         <Title text="Dropdown bound to JSON Model" class="sapUiSmallMarginBottom" />
 
