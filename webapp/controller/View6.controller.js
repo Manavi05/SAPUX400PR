@@ -5,12 +5,12 @@ sap.ui.define([
 ], function (Controller, JSONModel, ValueState) {
     "use strict";
 
-    return Controller.extend("demo.practice.practice.controller.View5", {
+    return Controller.extend("demo.practice.practice.controller.View6", {
 
         onInit: function () {
             // Initialize model
             var oModel = new JSONModel({
-                email: ""
+                number: ""
             });
             this.getView().setModel(oModel);
         },
@@ -18,10 +18,10 @@ sap.ui.define([
         onLiveChange: function (oEvent) {
             // Get input value
             var sValue = (oEvent.getParameter("value") || "").trim();
-            var oInput = this.byId("emailInput");
+            var oInput = this.byId("numberInput");
 
-            // Email validation regex
-            var bValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(sValue);
+            // ✅ Correct regex for only digits
+            var bValid = /^\d*$/.test(sValue);
 
             // Validation logic
             if (!sValue) {
@@ -29,12 +29,12 @@ sap.ui.define([
                 oInput.setValueStateText("");
             } 
             else if (bValid) {
-                oInput.setValueState(ValueState.Success);
-                oInput.setValueStateText("Valid Email");
+                oInput.setValueState(ValueState.Information);
+                oInput.setValueStateText("Valid number");
             } 
             else {
                 oInput.setValueState(ValueState.Error);
-                oInput.setValueStateText("Enter Email like abc@xyz.com");
+                oInput.setValueStateText("Only numbers allowed");
             }
         }
 
