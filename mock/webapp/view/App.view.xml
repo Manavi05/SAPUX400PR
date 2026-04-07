@@ -1,0 +1,27 @@
+<mvc:View
+  controllerName="demo.mock.mock.controller.App"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <App>
+  <Page title="Purchase Requisition Mock">
+    <content>
+      <Table items="{/PRSet}">
+        <columns>
+          <Column><Text text="PR No" /></Column>
+          <Column><Text text="Description" /></Column>
+          <Column><Text text="Qty" /></Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <cells>
+              <Text text="{Banfn}" />
+              <Text text="{Txz01}" />
+              <Text text="{Menge}" />
+            </cells>
+          </ColumnListItem>
+        </items>
+      </Table>
+    </content>
+  </Page>
+ </App> 
+</mvc:View>
