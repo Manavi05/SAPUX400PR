@@ -5,7 +5,7 @@
 
     <VBox class="sapUiSmallMargin" width="20rem">
 
-        <Title text="Email Validation" class="sapUiSmallMarginBottom" />
+        <Title text="Number Only Input" class="sapUiSmallMarginBottom" />
 
         <Input 
             id="numberInput"
