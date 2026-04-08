@@ -1,0 +1,22 @@
+ {
+  "Requisitions": [
+    {
+      "ReqId": "PR1001",
+      "Supplier": "ABC Ltd",
+      "Amount": 450000,
+      "Status": "Approved"
+    },
+    {
+      "ReqId": "PR1002",
+      "Supplier": "XYZ Pvt Ltd",
+      "Amount": 120000,
+      "Status": "Pending"
+    },
+    {
+      "ReqId": "PR1003",
+      "Supplier": "Global Corp",
+      "Amount": 780000,
+      "Status": "Rejected"
+    }
+  ]
+}

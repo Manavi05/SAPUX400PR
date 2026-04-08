@@ -1,0 +1,52 @@
+<mvc:View
+    controllerName="com.databind.databind.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page title="Advanced Data Handling">
+
+        <content>
+
+            <!-- Toolbar -->
+            <Toolbar>
+                <Button text="Filter Pending" press=".onFilterPending" />
+                <Button text="Sort by Amount" press=".onSortAmount" />
+            </Toolbar>
+
+            <HBox>
+
+                <!-- List -->
+                <List
+                    id="reqList"
+                    items="{/Requisitions}">
+
+                    <StandardListItem
+                        title="{ReqId}"
+                        description="{Supplier}"
+                        info="{Amount}"
+                        infoState="{
+                            path: 'Amount',
+                            formatter: '.formatter.amountState'
+                        }"
+                        type="Active"
+                        press=".onSelect" />
+                </List>
+
+                <!-- Details -->
+                <VBox id="detailBox" class="sapUiMediumMargin">
+
+                    <Title text="Details" />
+
+                    <Text text="ID: {/ReqId}" />
+                    <Text text="Supplier: {/Supplier}" />
+                    <Text text="Amount: {/Amount}" />
+                    <Text text="Status: {/Status}" />
+
+                </VBox>
+
+            </HBox>
+
+        </content>
+
+    </Page>
+</mvc:View>
