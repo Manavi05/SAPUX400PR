@@ -1,0 +1,28 @@
+<mvc:View
+    controllerName="demo.practice.practice.controller.View16"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <VBox class="sapUiSmallMargin" width="22rem">
+
+        <Title text="Expand / Collapse Panel" class="sapUiSmallMarginBottom"/>
+
+        <Panel
+            id="myPanel"
+            headerText="User Details"
+            expandable="true"
+            expanded="{/isExpanded}"
+            expand="onToggle">
+
+            <content>
+                <VBox class="sapUiSmallMarginTop">
+                    <Input placeholder="Enter name" />
+                    <Input placeholder="Enter email" class="sapUiSmallMarginTop"/>
+                </VBox>
+            </content>
+
+        </Panel>
+
+    </VBox>
+
+</mvc:View>

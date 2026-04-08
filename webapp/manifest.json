@@ -89,7 +89,7 @@
       }
     },
     "rootView": {
-      "viewName": "demo.practice.practice.view.View12",
+      "viewName": "demo.practice.practice.view.View16",
       "type": "XML",
       "id": "App",
       "async": true

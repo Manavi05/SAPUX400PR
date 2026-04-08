@@ -1,0 +1,38 @@
+<mvc:View 
+    controllerName="demo.practice.practice.controller.View13"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m">
+
+    <VBox class="sapUiSmallMargin" width="100%" alignItems="Center" justifyContent="Center">
+        
+        <Title text="VBox / HBox Alignment" class="sapUiSmallMarginBottom"/>
+
+        <!-- HBox for horizontal alignment -->
+        <HBox 
+            width="100%"
+            justifyContent="SpaceBetween"
+            alignItems="Center"
+            class="sapUiSmallMarginBottom">
+
+            <Button text="Left" />
+            <Button text="Center" />
+            <Button text="Right" />
+            
+        </HBox>
+          
+        <!-- VBox for centered content -->
+        <VBox
+            width="100%"
+            alignItems="Center"
+            justifyContent="Center"
+            class="sapUiSmallMarginTop">
+
+            <Text text="Centered Content" />
+            <Button text="Action" />
+
+        </VBox>
+        
+    </VBox>
+
+</mvc:View>
