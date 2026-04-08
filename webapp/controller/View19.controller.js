@@ -11,7 +11,7 @@ sap.ui.define([
             // Create dialog only once
             if (!this._oDialog) {
                 this._oDialog = sap.ui.xmlfragment(
-                    "demo.practo.practo.view.Dialog",
+                    "demo.practice.practice.view.Dialog",
                     this
                 );
                 oView.addDependent(this._oDialog);
