@@ -1,0 +1,39 @@
+<mvc:View
+    controllerName="demo.practice.practice.controller.View17"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <VBox class="sapUiSmallMargin">
+
+        <Title
+            text="Margin &amp; Padding Example"
+            class="sapUiSmallMarginBottom" />
+
+        <Panel
+            headerText="Form Section"
+            class="sapUiResponsivePadding">
+
+            <content>
+                <VBox class="sapUiSmallMarginTop">
+
+                    <Input
+                        placeholder="First Name"
+                        class="sapUiSmallMarginBottom" />
+
+                    <Input
+                        placeholder="Last Name"
+                        class="sapUiSmallMarginBottom" />
+
+                    <Button
+                        text="Submit"
+                        type="Emphasized"
+                        class="sapUiSmallMarginTop" />
+
+                </VBox>
+            </content>
+
+        </Panel>
+
+    </VBox>
+
+</mvc:View>
