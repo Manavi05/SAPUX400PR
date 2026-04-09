@@ -1,0 +1,41 @@
+<mvc:View
+    controllerName="demo.utest.utest.controller.Login"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <VBox class="sapUiSmallMargin" width="22rem">
+
+        <Title text="Login Form" class="sapUiSmallMarginBottom"/>
+
+        <!-- Username -->
+        <Input
+            id="username"
+            placeholder="Enter Username"
+            liveChange="onValidate" />
+
+        <!-- Password with Show/Hide -->
+        <Input
+            id="password"
+            placeholder="Enter Password"
+            type="Password"
+            liveChange="onValidate"
+            showValueHelp="true"
+            valueHelpIconSrc="sap-icon://show"
+            valueHelpRequest="onTogglePassword" />
+
+        <!-- Buttons -->
+        <HBox class="sapUiSmallMarginTop">
+            <Button
+                text="Submit"
+                type="Emphasized"
+                press="onSubmit" />
+
+            <Button
+                text="Cancel"
+                class="sapUiSmallMarginBegin"
+                press="onCancel" />
+        </HBox>
+
+    </VBox>
+
+</mvc:View>
