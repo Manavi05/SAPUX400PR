@@ -1,0 +1,51 @@
+<mvc:View
+    controllerName="demo.practice.practice.controller.View20"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+<App>
+    <Page title="Search Bar Filter Table">
+        <content>
+            <VBox class="sapUiSmallMargin">
+
+                <SearchField 
+                    width="100%" 
+                    liveChange="onSearch"
+                    placeholder="Search by Name or City" />
+
+                <Table
+                    id="idTable"
+                    inset="false"
+                    items="{/employees}">
+
+                    <columns>
+                        <Column>
+                            <Text text="ID" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Name" />
+                        </Column>
+
+                        <Column>
+                            <Text text="City" />
+                        </Column>
+                    </columns>
+
+                    <items>
+                        <ColumnListItem>
+                            <cells>
+                                <Text text="{id}" />
+                                <Text text="{name}" />
+                                <Text text="{city}" />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+
+                </Table>
+
+            </VBox>
+        </content>
+    </Page>
+  </App>  
+
+</mvc:View>
