@@ -1,0 +1,80 @@
+<mvc:View
+    controllerName="demo.regapp.regapp.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+<App id="app1">
+
+    <Page id="pageMain" title="Registration Manager">
+        <content>
+
+            <!-- 🔹 FORM -->
+            <VBox id="formBox" class="sapUiSmallMargin">
+
+                <Input id="idRegid" placeholder="Registration ID"/>
+                <Input id="idFirstName" placeholder="First Name"/>
+                <Input id="idMiddleName" placeholder="Middle Name"/>
+                <Input id="idSurname" placeholder="Surname"/>
+                
+                <DatePicker id="idDob" placeholder="Date of Birth"/>
+
+                <Input id="idAge" type="Number" placeholder="Age"/>
+
+                <Select id="idGender">
+                    <items>
+                        <core:Item id="itemMale" key="M" text="Male"/>
+                        <core:Item id="itemFemale" key="F" text="Female"/>
+                    </items>
+                </Select>
+
+                <Input id="idAddress" placeholder="Address"/>
+
+                <Button 
+                    id="btnSubmit"
+                    text="Create" 
+                    press="onSubmit" 
+                    type="Emphasized"/>
+
+            </VBox>
+
+            <!-- 🔹 ACTION BUTTONS -->
+            <HBox id="actionBox" class="sapUiSmallMarginTop">
+                <Button id="btnUpdate" text="Update" press="onUpdatePress"/>
+                <Button id="btnDelete" text="Delete" press="onDeletePress"/>
+            </HBox>
+
+            <!-- 🔹 TABLE -->
+            <Table
+                id="idTable"
+                items="{/Registrations}"
+                mode="SingleSelectLeft"
+                class="sapUiSmallMarginTop">
+
+                <columns>
+                    <Column id="_IDGenColumn"><Text id="_IDGenText1" text="Regid"/></Column>
+                    <Column id="_IDGenColumn1"><Text id="_IDGenText2" text="First Name"/></Column>
+                    <Column id="_IDGenColumn2"><Text id="_IDGenText3" text="Surname"/></Column>
+                    <Column id="_IDGenColumn3"><Text id="_IDGenText4" text="Age"/></Column>
+                    <Column id="_IDGenColumn4"><Text id="_IDGenText5" text="Gender"/></Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem id="_IDGenColumnListItem">
+                        <cells>
+                            <Text id="_IDGenText6" text="{Regid}"/>
+                            <Text id="_IDGenText7" text="{FirstName}"/>
+                            <Text id="_IDGenText8" text="{Surname}"/>
+                            <Text id="_IDGenText9" text="{Age}"/>
+                            <Text id="_IDGenText10" text="{Gender}"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+
+            </Table>
+
+        </content>
+    </Page>
+
+</App>
+</mvc:View>
