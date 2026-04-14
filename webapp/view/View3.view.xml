@@ -1,0 +1,21 @@
+<mvc:View
+    controllerName="demo.practice.practice.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <VBox class="sapUiSmallMargin" width="20rem" >
+        <Title text="Max Length Validation" class="sapUiSmallMarginBottom" />
+
+        <Input 
+            id="inputField"
+            value="{/inputText}"
+            liveChange="onLiveChange"
+            placeholder="Max 10 characters" 
+        />
+
+        <Text 
+            text="Length: {/length}"
+            class ="sapUiSmallMarginTop"/>
+
+    </VBox>
+</mvc:View>

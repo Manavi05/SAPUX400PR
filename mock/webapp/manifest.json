@@ -1,0 +1,38 @@
+{
+  "sap.app": {
+    "id": "demo.mock.mock",
+    "type": "application",
+    "title": "Simple PR Mock",
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/sap/ZPR_SRV/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0",
+          "localUri": "localservice/metadata.xml"
+        }
+      }
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "demo.mock.mock.view.App",
+      "type": "XML",
+      "async": true
+    },
+    "dependencies": {
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "models": {
+      "": {
+        "dataSource": "mainService",
+        "settings": {
+          "useBatch": false
+        }
+      }
+    }
+  }
+}
