@@ -1,0 +1,19 @@
+<mvc:View
+  controllerName="demo.practice.practice.controller.View23"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+<App>
+  <Page id="page" title="Disable UI During Loading">
+    <content>
+      <VBox class="sapUiSmallMargin">
+        <Button
+          text="Load Data"
+          press=".onLoadData" />
+
+        <Input placeholder="Enter something" />
+        <Button text="Another Action" />
+      </VBox>
+    </content>
+  </Page>
+  </App>
+</mvc:View>

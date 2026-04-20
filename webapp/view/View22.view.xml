@@ -1,0 +1,23 @@
+<mvc:View
+    controllerName="demo.practice.practice.controller.View22"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <App >
+      <Page title="Simulate Api Calls">
+        <content>
+            <VBox class="sapUiSmallMargin">
+
+                <Button
+                    text="Call API"
+                    id = "apiBtn"
+                    press=".onCallApi" />
+                
+                <Text id = "resultText"
+                text="result will apear here"
+                class = "sapUiSmallMargin"></Text>
+
+            </VBox>
+        </content>
+    </Page>
+    </App>
+</mvc:View>

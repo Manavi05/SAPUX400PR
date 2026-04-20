@@ -1,0 +1,19 @@
+<mvc:View
+    controllerName="demo.practice.practice.controller.View21"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <App>
+      <Page title="Busy indicator on button click">
+        <content>
+            <VBox class="sapUiSmallMargin">
+
+                <Button
+                    text="Submit"
+                    id = "busyBtn"
+                    press=".onPressBusyButton" />
+
+            </VBox>
+        </content>
+    </Page>
+   </App> 
+</mvc:View>

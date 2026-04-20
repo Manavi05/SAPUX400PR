@@ -1,0 +1,22 @@
+<mvc:View
+    controllerName="demo.practice.practice.controller.View24"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+<App>
+    <Page title="Copy Text to Clipboard">
+        <content>
+            <VBox class="sapUiSmallMargin">
+
+                <Input
+                    id="inputText"
+                    placeholder="Enter text to copy" />
+
+                <Button
+                    text="Copy"
+                    press=".onCopyText" />
+
+            </VBox>
+        </content>
+    </Page>
+</App>
+</mvc:View>

@@ -1,0 +1,22 @@
+<mvc:View
+    controllerName="demo.practice.practice.controller.View25"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+<App>
+    <Page title="Display Formatted Date">
+        <content>
+            <VBox class="sapUiSmallMargin">
+
+                <Text
+                    id="dateText"
+                    text="Date will appear here" />
+
+                <Button
+                    text="Show Date"
+                    press="onShowDate" />
+
+            </VBox>
+        </content>
+    </Page>
+</App>
+</mvc:View>
